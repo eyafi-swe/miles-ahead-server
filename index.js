@@ -11,15 +11,23 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/blogs',(req,res)=>{
-    res.send(blogs);
+app.get('/blogs', (req, res) => {
+  res.send(blogs);
 })
 
-app.get('/course_categories', (req,res)=>{
-    res.send(courseCategories);
+app.get('/course_categories', (req, res) => {
+  res.send(courseCategories);
 })
-app.get('/courses', (req,res)=>{
-    res.send(courses);
+
+app.get('/course_categories/:id', (req, res) => {
+  const id = req.params.id
+  console.log(id)
+  const categoryCourse = courses.filter(course => course.category_id === id)
+  res.send(categoryCourse);
+})
+
+app.get('/courses', (req, res) => {
+  res.send(courses);
 })
 
 app.listen(port, () => {

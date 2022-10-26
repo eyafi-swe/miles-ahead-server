@@ -1,26 +1,26 @@
 [
     {
-        "id":1,
+        "id":"1",
         "category":"Computer Fundamentals"
     },
     {
-        "id":2,
+        "id":"2",
         "category":"Basic Programming"
     },
     {
-        "id":3,
+        "id":"3",
         "category":"Web Developement"
     },
     {
-        "id":4,
+        "id":"4",
         "category":"Mobile Application"
     },
     {
-        "id":5,
+        "id":"5",
         "category":"Database Management System"
     },
     {
-        "id":6,
+        "id":"6",
         "category":"Data Structure and OOP"
     }
 ]
